@@ -1,32 +1,17 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
 require("dotenv").config();
 const path = require("path");
 
-const app = express();
+const router = express.Router();
 
-// Middleware to parse form data
-app.use(bodyParser.urlencoded({ extended: true }));
-
-// ✅ Serve static files from the "assets" folder
-app.use("/assets", express.static(path.join(__dirname, "assets")));
-
-// ✅ Optional: Serve static files from root (like .js or .html in root)
-app.use(express.static(path.join(__dirname)));
-
-// Serve default "contact.html"
-app.get("/", (req, res) => {
+// Serve contact.html
+router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "contact.html"));
 });
 
-// Serve any other HTML page dynamically
-app.get("/:page", (req, res) => {
-  res.sendFile(path.join(__dirname, `${req.params.page}.html`));
-});
-
 // Handle form submission
-app.post("/send-email", (req, res) => {
+router.post("/send-email", (req, res) => {
   const {
     name,
     email,
@@ -38,8 +23,8 @@ app.post("/send-email", (req, res) => {
     aftermarket,
   } = req.body;
 
-  console.log("Form data received:", req.body);
-
+  console.log;
+  "Form data:", req.body; // Log the form data for debugging
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -49,18 +34,18 @@ app.post("/send-email", (req, res) => {
   });
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: ["sbafathima8910@gmail.com", "arsheenstrong@gmail.com"],
+    from: "CEMTEC Cement & Mining Technology",
+    to: ["uzaidmohd@gmail.com", "uzaid@obtechnos.com"],
     subject: "New Contact Form Submission",
     text: `
-    Name: ${name}
-    Email: ${email}
-    Phone: ${phone}
-    Company: ${company}
-    Country: ${country}
-    Product/Service: ${products}
-    Equipment: ${Equipment}
-    Aftermarket: ${aftermarket}
+      Name: ${name}
+      Email: ${email}
+      Phone: ${phone}
+      Company: ${company}
+      Country: ${country}
+      Product/Service: ${products}
+      Equipment: ${Equipment}
+      Aftermarket: ${aftermarket}
     `,
   };
 
@@ -75,11 +60,4 @@ app.post("/send-email", (req, res) => {
   });
 });
 
-//feedback form
-
-// Serve any other HTML page dynamically
-
-// Start server
-app.listen(7000, () => {
-  console.log("Server running at http://localhost:7000");
-});
+module.exports = router;
