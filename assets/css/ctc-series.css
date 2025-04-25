@@ -1,0 +1,135 @@
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Cimgs/ctc-series/hero-img.jpg") !important;
+}
+
+.industries-hero-page p {
+  /* font-family: "Barlow Condensed", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.features-section-s2.ctc-key-facts {
+  margin-bottom: 80px;
+}
+
+.ctc-key-facts.section-padding {
+  padding-bottom: 0;
+}
+
+.ctc-key-facts .icons-outer {
+  /* margin-top: 150rem; */
+}
+
+.grid {
+  margin-top: 2.5rem;
+}
+
+.icons-outer .grid p {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* ctc versions */
+
+/* packages & solutions */
+
+.cards-package-container {
+  margin-top: 1rem;
+}
+.cards-package-container .card {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+  height: 200px;
+  /* height: 300px; */
+}
+.cards-package-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cards-package-container .card-header {
+  /* background: linear-gradient(90deg, rgb(0, 121, 194), rgb(95, 96, 98)); */
+  background-color: rgb(0, 121, 194);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  /* border-radius: 4px; */
+}
+.cards-package-container .card-body {
+  padding: 0 15px;
+  /* padding-left: 13px; */
+  padding-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.cards-package-container .card-body span {
+  color: rgb(0, 121, 194);
+}
+
+.cards-package-container .card-body ul li:hover {
+  /* background: rgba(0, 121, 194, 0.1); */
+  transform: scale(1.02);
+}
+.cards-package-container .card-body ul li::before {
+  /* content: "\2022";
+  color: rgb(0, 121, 194);
+  font-size: 1.2rem;
+  margin-right: 10px; */
+}
+.cards-package-container .read-morep {
+  color: rgb(0, 121, 194);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  background: none;
+}
+.cards-package-container .read-morep:hover {
+  color: rgb(95, 96, 98);
+}
+
+.cards-package-container .hidden {
+  /* display: none !important; */
+}
+
+.cards-package-container .hide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.cards-package-container .show {
+  display: inline;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.section-paragraph {
+  font-size: 1.067rem;
+  margin-top: 1rem;
+  /* margin-bottom: 2.5rem; */
+  text-align: center;
+}
+
+.related-content {
+  background-color: #e7e9ea !important;
+}
+
+.downloads-section {
+  background-color: white !important;
+}

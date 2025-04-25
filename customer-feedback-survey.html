@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Customer Satisfaction Survey</title>
+<link href="assets/css/themify-icons.css" rel="stylesheet" />
+<link href="assets/css/flaticon.css" rel="stylesheet" />
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/css/animate.css" rel="stylesheet" />
+<link href="assets/css/owl.carousel.css" rel="stylesheet" />
+<link href="assets/css/owl.theme.css" rel="stylesheet" />
+<link href="assets/css/slick.css" rel="stylesheet" />
+<link href="assets/css/slick-theme.css" rel="stylesheet" />
+<link href="assets/css/swiper.min.css" rel="stylesheet" />
+<link href="assets/css/owl.transitions.css" rel="stylesheet" />
+<link href="assets/css/jquery.fancybox.css" rel="stylesheet" />
+<link href="./assets/css/style.css" rel="stylesheet" />
+<link href="./assets/css/contact.css" rel="stylesheet" />
+<link href="assets/css/odometer-theme-default.css" rel="stylesheet" />
+<link href="./assets/css/uzaid.css" rel="stylesheet" />
+
+<!-- font awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  rel="stylesheet" />
+<link rel="stylesheet" href="path-to-flaticon.css" />
+
+<style>
+.rating-scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align the numbers directly below the radio buttons */
+}
+
+.rating-scale label {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.satisfied input[type="radio"] {
+   /* Hide the radio buttons */
+ 
+}
+
+.rating-number {
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.rating-scale input[type="radio"] {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+form h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+    .checkbox-option {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-top: 20px;
+      /* justify-content: center; */
+    }
+
+
+    .text-area-wrapper textarea{
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      margin-bottom: 10px;
+      display: block;
+      margin-bottom: 0px !important;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .rating-scale {
+      display: flex;
+      justify-content: space-between;
+      max-width: 500px;
+    }
+    .rating-option {
+      text-align: center;
+    }
+    .cust-feedback-survey  button {
+      background-color:  rgb(0, 121, 194) !important;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      /* border-radius: 4px; */
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .cust-feedback-survey  button:hover {
+        transform: scale(1.03);
+  transition: transform 0.3s ease;
+  text-transform: none;
+    }
+
+    .cust-feedback-survey {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .cust-feedback-survey h1 {
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+   <!-- Start header -->
+   <header id="header" class="site-header header-style-2">
+    <div class="topbar toptopnavbar">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-3">
+            <div class="contact-info">
+              <ul>
+                <li><i class="ti-email"></i> info@cemtecgroup.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-md-7 site-header topnavbar">
+            <div  id="navbar" class="navbar-collapse collapse navbar-right navigation-holder" >
+              <button class="close-navbar"><i class="ti-close"></i></button>
+              <ul class="nav navbar-nav parent-topnavbar">
+                <li class="menu-item-has-children">
+                  <a href="#" class="topnav-custome-title">About Us</a>
+                  <ul class="sub-menu">
+                    <li><a href="cemtec-group.html">Cemtec Group</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li> <a href="mission-vision.html">Mission, Vision, Values</a> </li>
+                    <li>
+                      <a href="sustainability.html">Sustainability</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#" class="topnav-custome-title">News</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="media-articles.html">Media Articles</a>
+                    </li>
+                    <li>
+                      <a href="industry-papers.html">Industry Papers</a>
+                    </li>
+                    <li><a href="case-studies-files.html">Case Studies</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#" class="topnav-custome-title">Events</a>
+                  <ul class="sub-menu"> <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <!--<!-- <li><a href="webinars.html">Webinars</a></li>--> 
+                  </ul>
+                </li>
+                <li><a href="careers.html" class="topnav-custome-title" >Careers</a></li>   <li class="menu-item-has-children">
+                  <a href="#" class="topnav-custome-title">Contact</a>
+                  <ul class="sub-menu"> <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./customer-feedback-survey.html">FeedBack</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="index-2.html" class="topnav-custome-title"
+                    ><span class="flag flag-english"></span>English
+                  </a> <ul class="sub-menu">
+                    <li> <a href="en.html"> <span class="flag flag-english"></span> English </a> </li>
+                    <li> <a href="de.html"> <span class="flag flag-german"></span> German </a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-md-2">
+            <div class="social">
+              <ul>
+                <li> <a href="https://www.linkedin.com/company/cemtec---cement-and-mining-technology/"  target="_blank"><i class="ti-linkedin"></i></a> </li>
+                <li> <a href="https://www.instagram.com/cemtec_official/"  target="_blank"><i class="ti-instagram"></i></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end topbar -->
+    <nav class="navigation navbar navbar-default">
+      <div class="container mynavigation-container">
+        <div class="navbar-header">
+          <button type="button" class="open-btn">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-1.png" alt =" " /></a>
+        </div>
+        <div id="navbar" class="navbar-collapse my-navbar-collapse collapse navbar-right navigation-holder main-navigation" >
+          <button class="close-navbar"><i class="ti-close"></i></button>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" class="custom-nav-title">Home</a></li>
+            <li class="menu-item-has-children">
+              <a href="#" class="custom-nav-title">Industries</a>
+              <ul class="sub-menu">
+                <li><a href="./cement-industries.html">Cement</a></li>
+                <li><a href="./mining.html">Mining</a></li> <li> <a href="./industrialminerals.html">Industrial Minerals</a> </li>
+                <li><a href="./fertilizers.html">Fertilizers</a></li>
+                <li><a href="./SCMs.html">SCMs</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#" class="custom-nav-title">Products</a>
+              <ul class="sub-menu mega-drop-down-menu">
+                <div class="root-mega-menu">
+                  <ul class="mega-sub-menu">
+                  <h4>Mills</h4>
+                  <li><a href="ball-mills.html">Ball Mills</a></li>
+                  <li><a href="agsag-mills.html">AG/SAG Mills</a></li>
+                  <li><a href="rod-mills.html">Rod Mills</a></li>
+                  <li> 
+                    <!-- <a href="vertical-mills.html">Vertical Mills</a> --> 
+                  </li>
+                  <li><a href="roller-mills.html">Vertical Roller Mills</a></li>
+                  <!-- <li><a href="tower-mills.html">Tower Mills</a></li> -->
+                </ul><ul class="mega-sub-menu">
+                    <h4>Plant Units</h4>
+                    <li><a href="dry-plants.html">Dry Plants</a></li>
+                    <li><a href="wet-plants.html">Wet Plants</a></li> 
+                    <!--<li> <a href="pelletizing-plants.html">Pelletizing Plants</a> </li>
+                    <li><a href="drying-plants.html">Drying Plants</a></li>-->
+                  </ul>
+                  <ul class="mega-sub-menu">
+                    <h4>Agglomeration</h4>
+                    <li>
+                      <a href="pelletizing-discs.html">Pelletizing Discs</a>
+                    </li>
+                    <li><a href="mixers.html">Mixers</a></li>
+                    <li><a href="coolers.html">Coolers</a></li>
+                  </ul>
+                  <ul class="mega-sub-menu">
+                    <h4>Dynamic Air Classifiers</h4>
+                    <li><a href="ctc-series.html">CTC Series</a></li>
+                  </ul>
+                  <ul class="mega-sub-menu">
+                    <h4>Dryers and Rotating Drums</h4>
+                    <li><a href="rotary-dryers.html">Rotary Dryers and Kilns</a></li>
+                    <li> <a href="rotating-drums.html">Rotating  Drums</a> </li>
+                    <li><a href="scrubbers.html">Scrubbers</a></li>
+                  </ul>
+                  <ul class="mega-sub-menu">
+                    <h4>Digital</h4>
+                    <li> <a href="gear-inspections.html">Gear Inspections</a> </li>
+                  <li> <a href="particle-sizer.html">Particle Size Analyzer</a> </li>
+                  <li> <a href="pellet-analyzer.html">Pellet Size Analyzer</a> </li>
+                  <!--<li> <a href="smart-grinding.html">Smart Grinding</a> </li>-->
+                  </ul>
+                </div>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#" class="custom-nav-title">Services</a>
+              <ul class="sub-menu industries-sub-menu">
+                <li> <a href="process-optimization.html">Process Optimization</a> </li>
+                <li>
+                  <a href="retrofits-upgrades.html">Retrofits & Upgrades</a>
+                </li> <li> <a href="installation-commissioning.html">Installation & Commissioning</a> </li>
+                <li><a href="spare-wear.html">Spares & Wears</a></li>
+                <li> <a href="audits-training.html">Inspection & Training</a> </li>
+                <li>
+                  <a href="service-contracts.html">Service Contracts</a>
+                </li>
+                <!-- <li><a href="mycemtec.html">myCEMTEC</a></li> -->
+                <!-- <li><a href="remote-support.html">Remote Support</a></li> -->
+              </ul>
+            </li>
+            <li> <a href="test-center.html" class="custom-nav-title">Test Center</a> </li> <li> <a href="manufacturing.html" class="custom-nav-title">Manufacturing</a> </li>
+          </ul>
+        </div>
+        <!-- end of nav-collapse -->
+
+        <div class="search-contact my-search-contact">
+          <div class="contact-btn"> <a href="https://customer-portal.cemtec-dev.net/login" target="_blank" class="theme-btn theme-btn-1"> myCEMTEC</a > </div>
+
+          <div class="contact-btn">
+            <a href="./contact.html" class="theme-btn theme-btn-2">
+                  REACH&nbsp;OUT&nbsp;&nbsp;<i class="fas fa-chevron-right"></i>
+                </a>
+          </div>
+        </div>
+      </div>
+      <!-- end of container -->
+    </nav>
+  </header>
+  <!-- end of header --> 
+
+  <!-- hero-page -->
+
+  <section class="industries-hero-page general-hero-section">
+    <div class="industries-info">
+      <h2 class="industries-hero-title gradient-text">Customer Feedback</h2>
+    </div>
+  </section>
+
+    <!-- end hero-page -->
+  <div class="container cust-feedback-survey">
+    <h1>Customer Satisfaction Survey</h1>
+    <p>
+      Thank you for taking the time to provide feedback. Your responses help
+      us improve our services.
+    </p>
+
+    <!-- //satisfactionSurvey -->
+<form id="" action="/send-feedback" method="POST">
+            <!-- Section 1: Background Information -->
+            <div class="section">
+                <h2>1. Background Information</h2>
+                
+                <div class="form-group">
+                  <label>a. Have we worked together in the past 12 months? <span class="required">*</span></label>
+                  <div class="checkbox-option">
+                      <input type="radio" id="work1" name="work_status" value="delivery_project" required>
+                      <label for="work1">Yes – delivery/project</label>
+                      <input type="hidden" id="work1-label" name="work_status_label" value="Yes – delivery/project">
+                  </div>
+                  <div class="checkbox-option">
+                      <input type="radio" id="work2" name="work_status" value="commissioning">
+                      <label for="work2">Yes – commissioning</label>
+                      <input type="hidden" id="work2-label" name="work_status_label" value="Yes – commissioning">
+                  </div>
+                  <div class="checkbox-option">
+                      <input type="radio" id="work3" name="work_status" value="spare_parts">
+                      <label for="work3">Yes – spare parts only</label>
+                      <input type="hidden" id="work3-label" name="work_status_label" value="Yes – spare parts only">
+                  </div>
+                  <div class="checkbox-option">
+                      <input type="radio" id="work4" name="work_status" value="no_activity">
+                      <label for="work4">No – no activity in the past 12 months</label>
+                      <input type="hidden" id="work4-label" name="work_status_label" value="No – no activity in the past 12 months">
+                  </div>
+                  <div class="checkbox-option">
+                      <input type="radio" id="work5" name="work_status" value="not_sure">
+                      <label for="work5">Not sure</label>
+                      <input type="hidden" id="work5-label" name="work_status_label" value="Not sure">
+                  </div>
+              </div>
+              
+                
+                <div class="form-group">
+                    <label>b. Which industry sector best describes your company? <span class="required">*</span></label>
+                    <div class="checkbox-option">
+                        <input type="radio" id="sector1" name="industry_sector" value="cement" required>
+                        <label for="sector1">Cement</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="radio" id="sector2" name="industry_sector" value="mining">
+                        <label for="sector2">Mining</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="radio" id="sector3" name="industry_sector" value="industrial_minerals">
+                        <label for="sector3">Industrial Minerals</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="radio" id="sector4" name="industry_sector" value="fertilizers">
+                        <label for="sector4">Fertilizers</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="radio" id="sector5" name="industry_sector" value="other">
+                        <label for="sector5">Other: 
+                        <input type="text" class="other-input" id="other_sector" name="other_sector" disabled>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section 2: Satisfaction -->
+            <div class="section satisfied">
+              <h2>2. Satisfaction (1 = Very dissatisfied | 5 = Very satisfied)</h2>
+              
+              <div class="form-group">
+                  <label for="overall_performance">a. How satisfied are you with our overall performance? <span class="required">*</span></label>
+                  <div class="rating-scale">
+                      <label>
+                          <input type="radio" id="overall_performance_1" name="overall_performance" value="1" required>
+                          <span class="rating-number">1</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="overall_performance_2" name="overall_performance" value="2">
+                          <span class="rating-number">2</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="overall_performance_3" name="overall_performance" value="3">
+                          <span class="rating-number">3</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="overall_performance_4" name="overall_performance" value="4">
+                          <span class="rating-number">4</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="overall_performance_5" name="overall_performance" value="5">
+                          <span class="rating-number">5</span>
+                      </label>
+                  </div>
+              </div>
+              
+              <div class="form-group">
+                  <label for="quality">b. How would you rate the quality of the delivered equipment/services? <span class="required">*</span></label>
+                  <div class="rating-scale">
+                      <label>
+                          <input type="radio" id="quality_1" name="quality" value="1" required>
+                          <span class="rating-number">1</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="quality_2" name="quality" value="2">
+                          <span class="rating-number">2</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="quality_3" name="quality" value="3">
+                          <span class="rating-number">3</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="quality_4" name="quality" value="4">
+                          <span class="rating-number">4</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="quality_5" name="quality" value="5">
+                          <span class="rating-number">5</span>
+                      </label>
+                  </div>
+              </div>
+          
+              <div class="form-group">
+                  <label for="communication">c. How satisfied were you with communication and support? <span class="required">*</span></label>
+                  <div class="rating-scale">
+                      <label>
+                          <input type="radio" id="communication_1" name="communication" value="1" required>
+                          <span class="rating-number">1</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="communication_2" name="communication" value="2">
+                          <span class="rating-number">2</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="communication_3" name="communication" value="3">
+                          <span class="rating-number">3</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="communication_4" name="communication" value="4">
+                          <span class="rating-number">4</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="communication_5" name="communication" value="5">
+                          <span class="rating-number">5</span>
+                      </label>
+                  </div>
+              </div>
+          
+              <div class="form-group">
+                  <label for="delivery">d. How would you rate delivery time and adherence to deadlines? <span class="required">*</span></label>
+                  <div class="rating-scale">
+                      <label>
+                          <input type="radio" id="delivery_1" name="delivery" value="1" required>
+                          <span class="rating-number">1</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="delivery_2" name="delivery" value="2">
+                          <span class="rating-number">2</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="delivery_3" name="delivery" value="3">
+                          <span class="rating-number">3</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="delivery_4" name="delivery" value="4">
+                          <span class="rating-number">4</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="delivery_5" name="delivery" value="5">
+                          <span class="rating-number">5</span>
+                      </label>
+                  </div>
+              </div>
+          
+              <div class="form-group">
+                  <label for="future_work">e. How likely are you to work with us again? <span class="required">*</span></label>
+                  <div class="rating-scale">
+                      <label>
+                          <input type="radio" id="future_work_1" name="future_work" value="1" required>
+                          <span class="rating-number">1</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="future_work_2" name="future_work" value="2">
+                          <span class="rating-number">2</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="future_work_3" name="future_work" value="3">
+                          <span class="rating-number">3</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="future_work_4" name="future_work" value="4">
+                          <span class="rating-number">4</span>
+                      </label>
+                      <label>
+                          <input type="radio" id="future_work_5" name="future_work" value="5">
+                          <span class="rating-number">5</span>
+                      </label>
+                  </div>
+              </div>
+          </div>
+          
+        
+            
+            <!-- Section 3: Open Feedback -->
+            <div class="section text-area-wrapper">
+                <h2>3. Open Feedback (optional)</h2>
+                
+                <div class="form-group">
+                    <label for="done_well">a. What did we do well?</label>
+                    <textarea id="done_well" name="done_well"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="improve">b. What could we improve?</label>
+                    <textarea id="improve" name="improve"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">c. Any further comments or suggestions?</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+            </div>
+            
+            <!-- Section 4: Submission Type -->
+            <div class="section">
+                <h2>4. Submission Type</h2>
+                
+                <div class="form-group">
+                    <label>Will your feedback be anonymous? <span class="required">*</span></label>
+                    <div class="checkbox-option">
+                        <input type="radio" id="anon1" name="anonymous" value="yes" required>
+                        <label for="anon1">Yes – anonymous</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="radio" id="anon2" name="anonymous" value="no">
+                        <label for="anon2">No – I am happy to be contacted for follow-up</label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit">Submit Survey</button>
+        </form>
+        
+    </div>
+
+    <script>
+        // Enable other industry sector text input when selected
+        document.querySelector('input[value="other"]').addEventListener('change', function() {
+            document.getElementById('other_sector').disabled = !this.checked;
+        });
+
+   
+    </script>
+
+    
+  </div>
+  <script>
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector(".site-header");
+      header.classList.toggle("is-sticky", window.scrollY > 0);
+    });
+  </script>
+  <style>
+    .site-header.is-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+</style>
+
+
+      <footer class="site-footer">
+        <div class="upper-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col col-lg-3 col-md-3 col-sm-6">
+                <div class="widget about-widget">
+                  <div class="logo widget-title">
+                    <h3>Follow us</h3>
+                  </div>
+                  <div class="social">
+                    <ul>
+                      <li> <a href="https://www.linkedin.com/company/cemtec---cement-and-mining-technology/"  target="_blank"><i class="ti-linkedin"></i></a> </li>
+                      <li> <a href="https://www.instagram.com/cemtec_official/"  target="_blank"><i class="ti-instagram"></i></a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-4 col-md-4 col-sm-6">
+                <div class="widget link-widget">
+                  <div class="widget-title">
+                    <h3>Learn More</h3>
+                  </div> <ul>
+                    <li><a href="industries.html">Industries</a></li>
+                   <!--  <li><a href="#">Products</a></li>-->
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="test-center.html">Test Center</a></li>
+                    <li><a href="manufacturing.html">Manufacturing</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="cemtec-group.html">About Us</a></li>
+                    <li><a href="exhibitions.html">Events</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col col-lg-5 col-md-5 col-sm-6">
+                <div class="widget contact-widget service-link-widget">
+                  <div class="widget-title">
+                    <h3>Headquarters</h3>
+                  </div>
+                  <ul>
+                    <li><span> CEMTEC - Cement and Mining Technology</span> </br>Ennshafenstraße 40,
+                      4470 Enns Austria <br></li>
+                    <li>Phone: +43 7223 83620</li>
+                    <!-- <li>Office Time: 8AM- 4PM</li> -->
+                    <li>Email: info@cemtecgroup.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end container --> 
+        </div>
+        <div class="lower-footer">
+          <div class="container">
+            <div class="row">
+              <div class="separator"></div>
+              <div class="col col-xs-12">
+                <p class="copyright"> Copyright &copy; 2024 CEMTEC. All rights reserved. </p>
+                <div class="short-links">
+                  <ul>
+                        <li><a href="assets/Cimgs/pdf/General-Terms-and-Conditions-CEMTEC_08-2024.pdf" target="_blank">General Terms & Conditions</a></li>
+                      <li><a href="privacy.html">Privacy</a></li>
+                      <li><a href="terms-use.html">Terms of Use</a></li>
+                      <li><a href="cookies.html">Cookies</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end site-footer -->
+ 
+
+<!-- All JavaScript files
+    ================================================== --> 
+
+<script>
+      function showSpinner(event) {
+        event.preventDefault();
+        const link = event.currentTarget;
+        const spinner = link.querySelector('.spinner');
+        spinner.style.display = 'inline-block';
+        
+        setTimeout(() => {
+          spinner.style.display = 'none';
+          window.location.href = link.href;
+        }, 2000); // Adjust the timeout as needed
+      }
+      </script> 
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- Plugins for this template --> 
+<script src="assets/js/jquery-plugin-collection.js"></script> 
+
+<!-- Custom script for this template --> 
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* body {
+  background-color: #f7f7f7 !important;
+}
+
+#img {
+  height: 600px;
+  width: 80%;
+  background-image: url("../Cimgs/history/timeline-graphic.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: cemter;
+} */
+.industries-hero-page {
+  position: relative;
+  /* width: 100vw; */
+  /* Full viewport height */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Cimgs/history/hero3.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 65vh;
+  background-attachment: fixed;
+  /* animation: parallax-move 3s infinite linear; */
+}
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  /* padding: 20px; */
+}
+
+section.history-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeline {
+  position: relative;
+  max-width: auto;
+  margin: auto;
+  margin-left: 250px;
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+.year {
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+  color: rgb(0, 121, 194);
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.square {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid rgb(0, 121, 194);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+.square.active {
+  background: #eeb41e;
+  transform: scale(1.1);
+}
+.connector {
+  width: 1.6px;
+  background: rgb(0, 121, 194);
+  height: 100px;
+  transition: height 0.5s ease-in-out;
+  margin-top: 5px;
+}
+.history-container .content {
+  text-align: left;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out, padding 0.6s ease-out,
+    opacity 0.6s ease-in-out;
+  opacity: 1;
+  max-height: none;
+}
+
+.history-container .content p {
+  margin-top: -5px;
+  margin-left: 18px;
+  font-size: 1.4rem;
+}
+
+.history-container .description {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.6s ease-in-out, max-height 0.6s ease-in-out;
+}
+.description.expanded {
+  opacity: 1;
+  max-height: 300px;
+}
+.history-container .title {
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(0, 121, 194);
+}
+
+.history-container img {
+  width: 380px;
+  height: 320px;
+}
+
+.history-container .img-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

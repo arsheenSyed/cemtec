@@ -1,0 +1,17 @@
+/* mega dropdown menu */
+
+@media (min-width: 1200px) {
+  .site-header #navbar > ul .sub-menu.mega-drop-down-menu {
+    width: 1200px !important;
+    left: 50% !important;
+    transform: translateX(-45%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .site-header #navbar > ul .sub-menu.mega-drop-down-menu {
+    width: 1200px !important;
+    left: 50% !important;
+    transform: translateX(-45%);
+  }
+}

@@ -1,0 +1,285 @@
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Cimgs/processoptimization/Process-203569-MAGPRO-POLYUS-Render.jpg") !important;
+}
+
+h2.gradient-text {
+  letter-spacing: 3px;
+}
+
+/* benefits */
+.icons-outer-benefits-section .grid {
+  margin-top: 2rem;
+  height: 150px;
+}
+
+.features-section-s2.benefits-icons-outer {
+  margin-bottom: 0px !important;
+}
+
+.features-section-s2.benefits-icons-outer p {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  /* font-weight: bold; */
+}
+.benefits-section {
+  padding: 0px 20px;
+  padding-bottom: 0 !important;
+  max-width: 100%;
+  margin: 0 auto; /* Center alignment */
+}
+
+.benefits-section h2 {
+  color: rgb(0, 121, 194); /* Blue color for the title */
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.benefits-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: rgb(0, 121, 194);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.benefits-sub-title {
+  margin-top: 1rem;
+  font-size: 1.067777rem;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+  gap: 25px; /* Space between items */
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(95, 96, 98); /* Grey for text */
+  background-color: #fff;
+  border-left: 4px solid rgb(0, 121, 194); /* Blue highlight on the left */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+  /* border-radius: 8px; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.benefits-list li:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.benefits-list li::before {
+  content: "✔"; /* Checkmark */
+  color: rgb(0, 121, 194); /* Blue for the checkmark */
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.benefits-section p {
+  font-size: 16px;
+  color: rgba(95, 96, 98, 0.7); /* Muted grey */
+  text-align: center;
+  margin-top: 40px;
+}
+
+.benefits-section p a {
+  color: rgb(0, 121, 194);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.benefits-section p a:hover {
+  color: rgba(0, 121, 194, 0.8); /* Slightly darker on hover */
+}
+
+p.benefits-line {
+  color: rgb(95, 96, 98);
+  font-size: 1.5rem !important;
+  margin-top: 50px !important;
+}
+
+p.benefits-line span {
+  font-weight: bold;
+}
+
+.benefits-outer {
+  /* border-bottom: 2px solid black !important; */
+}
+
+/* product */
+
+/* General Reset */
+
+/* Container for the cards */
+/* .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+} */
+
+/* Card Styling */
+
+.product-cards-outer .card {
+  background-color: white;
+  /* border-radius: 12px; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-cards-outer .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container with Hover Effect */
+.product-cards-outer .image-container {
+  overflow: hidden;
+}
+
+.product-cards-outer .image-container img {
+  width: 100%;
+  height: 200px !important;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-cards-outer .image-container img:hover,
+.product-cards-outer .card:hover img {
+  transform: scale(1.1);
+}
+
+/* Card Content Styling */
+.product-cards-outer .card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-cards-outer .card-content h3 {
+  font-size: 25px;
+  font-weight: bold;
+  /* color: rgb(0, 121, 194); */
+  color: rgb(95, 96, 98);
+  margin: 0 0 10px;
+  margin-top: 1.2rem;
+}
+
+.product-cards-outer .card-content p {
+  font-size: 16px;
+  color: rgb(95, 96, 98);
+  line-height: 1.6;
+}
+
+/* Add a subtle color accent on hover */
+.product-cards-outer .card-content h3:hover {
+  color: #eeb41e;
+  transition: color 0.3s ease;
+}
+
+/* related content */
+
+.related-content {
+  background-color: white !important;
+}
+/* related content */
+
+/* swiper */
+
+.row.slider {
+  margin-top: 2rem;
+}
+
+/* swiper */
+
+.slider .card {
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+  /* border-radius: 5px; */
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.slider .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+.slider .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.slider .card:hover img {
+  transform: scale(1.1); /* Scale image on hover */
+}
+
+/* Text Container */
+.slider .card-content {
+  padding: 15px 10px;
+  color: rgb(95, 96, 98);
+}
+
+.slider .card-content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  /* color: rgb(0, 121, 194); Blue text for headers */
+  color: rgb(95, 96, 98);
+  text-transform: uppercase;
+}
+
+.slider .card-content a {
+  /* display: inline-block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #eeb41e; 
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid #eeb41e;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+.slider .card-content a:hover {
+  background-color: #eeb41e;
+  color: white;
+}
+
+.swiper-horizontal {
+  touch-action: pan-y;
+  overflow-x: hidden;
+}
+
+/* downloads section */
+
+.downloads-section {
+  background-color: #e7e9ea !important;
+}

@@ -1,0 +1,25 @@
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Cimgs/audits&training/service-4n.jpg") !important;
+}
+
+.audits-about img {
+  width: 100%;
+  height: 420px !important;
+}
+
+.audits-related-content {
+  background-color: #e7e9ea !important;
+}
+
+.downloads-section {
+  background-color: white !important;
+}
+
+.downloads-row {
+  background: white !important;
+}
+
+.features-section-s2.benefits-icons-outer {
+  margin-bottom: 80px !important;
+}

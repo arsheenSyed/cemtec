@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background: white;
+        max-width: 600px;
+        width: 100%;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Centering and Styling the Heading */
+      h2 {
+        color: #0079c2;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        border-color: #0073e6;
+        outline: none;
+      }
+
+      button {
+        width: 100%;
+        background: #0079c2;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 15px;
+      }
+
+      button:hover {
+        background: #0079c2;
+      }
+
+      .success-message,
+      .error-message {
+        display: none;
+        text-align: center;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+      .success-message {
+        background: #28a745;
+        color: white;
+      }
+
+      .error-message {
+        background: #dc3545;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Apply for a Job</h2>
+      <form id="applyForm" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="position">Position Applying For</label>
+          <select id="position" name="position" required>
+            <option value="" disabled selected>Select a position</option>
+            <option value="Junior Project Manager">
+              Junior Project Manager
+            </option>
+            <option value="Accounting Assistant">Accounting Assistant</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="resume">Upload Resume (PDF/DOC)</label>
+          <input
+            type="file"
+            id="resume"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="coverletter">Cover Letter (Optional)</label>
+          <textarea id="coverletter" name="coverletter" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Submit Application</button>
+      </form>
+
+      <div id="message" class="success-message"></div>
+      <div id="error-message" class="error-message"></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("applyForm");
+        const successMessage = document.getElementById("message");
+        const errorMessage = document.getElementById("error-message");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          // Capture form data
+          const fullname = document.getElementById("fullname").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const position = document.getElementById("position").value.trim();
+          const resume = document.getElementById("resume").files[0]; // File upload
+          const coverletter = document
+            .getElementById("coverletter")
+            .value.trim();
+
+          // Form validation
+          if (!fullname || !email || !phone || !position || !resume) {
+            errorMessage.textContent = "Please fill in all required fields.";
+            errorMessage.style.display = "block";
+            successMessage.style.display = "none";
+            return;
+          }
+
+          // Show success message
+          successMessage.textContent = "Application submitted successfully!";
+          successMessage.style.display = "block";
+          errorMessage.style.display = "none";
+
+          // Clear form
+          form.reset();
+
+          // Redirect after 2 seconds
+          setTimeout(() => {
+            window.location.href = "success.html";
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>

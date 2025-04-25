@@ -1,0 +1,23 @@
+body {
+  background-color: #f7f7f7 !important;
+}
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Cimgs/history/hero3.jpg");
+  background-position: center;
+}
+#img {
+  height: 600px;
+  width: 80%;
+  background-image: url("../Cimgs/history/timeline-graphic.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: cemter;
+}

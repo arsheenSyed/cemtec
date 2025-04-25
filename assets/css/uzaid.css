@@ -1,0 +1,810 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+	#sustainability-page title
+******************************/
+.sustainability-page-title {
+  background: url("../Cimgs/sustainability-breadcrumb.jpg") center center/cover
+    no-repeat local;
+  width: 100%;
+  height: 430px;
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .sustainability-page-title {
+    height: 300px;
+  }
+}
+
+.sustainability-page-title:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sustainability-page-title .container {
+  height: 100%;
+  display: table;
+}
+
+@media screen and (min-width: 992px) {
+  .sustainability-page-title .container {
+    padding-top: 100px;
+  }
+}
+
+.sustainability-page-title .container > .row {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.sustainability-page-title h2 {
+  font-size: 50px;
+  font-size: 3.33333rem;
+  color: #fff;
+  margin: 0 0 0.3em;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .sustainability-page-title h2 {
+    font-size: 45px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .sustainability-page-title h2 {
+    font-size: 40px;
+    font-size: 2.66667rem;
+  }
+}
+
+.sustainability-page-title .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .sustainability-page-title .breadcrumb {
+    text-align: center;
+  }
+}
+
+.sustainability-page-title .breadcrumb li {
+  font-size: 16px;
+  font-size: 1.06667rem;
+  color: #fff;
+  margin-right: 5px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .sustainability-page-title .breadcrumb li {
+    font-size: 14px;
+    font-size: 0.93333rem;
+  }
+}
+
+.sustainability-page-title .breadcrumb li a {
+  color: #0079c2;
+}
+
+.sustainability-page-title .breadcrumb li a:hover {
+  color: #0079c2;
+}
+
+.sustainability-page-title .breadcrumb > li + li {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.sustainability-page-title .breadcrumb > li + li:before {
+  font-family: Flaticon;
+  content: "\f103";
+  padding: 0;
+  position: absolute;
+  left: -14px;
+  top: 1px;
+  color: #0079c2;
+}
+
+/******************************
+	#sustainability-page title End
+******************************/
+
+/******************************
+	#webinar-page title
+******************************/
+.webinar-page-title {
+  background: url("../Cimgs/webinar-breadcrumb.jpg") center center/cover
+    no-repeat local;
+  width: 100%;
+  height: 430px;
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .webinar-page-title {
+    height: 300px;
+  }
+}
+
+.webinar-page-title:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.webinar-page-title .container {
+  height: 100%;
+  display: table;
+}
+
+@media screen and (min-width: 992px) {
+  .webinar-page-title .container {
+    padding-top: 100px;
+  }
+}
+
+.webinar-page-title .container > .row {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.webinar-page-title h2 {
+  font-size: 50px;
+  font-size: 3.33333rem;
+  color: #fff;
+  margin: 0 0 0.3em;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .webinar-page-title h2 {
+    font-size: 45px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .webinar-page-title h2 {
+    font-size: 40px;
+    font-size: 2.66667rem;
+  }
+}
+
+.webinar-page-title .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .webinar-page-title .breadcrumb {
+    text-align: center;
+  }
+}
+
+.webinar-page-title .breadcrumb li {
+  font-size: 16px;
+  font-size: 1.06667rem;
+  color: #fff;
+  margin-right: 5px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .webinar-page-title .breadcrumb li {
+    font-size: 14px;
+    font-size: 0.93333rem;
+  }
+}
+
+.webinar-page-title .breadcrumb li a {
+  color: #0079c2;
+}
+
+.webinar-page-title .breadcrumb li a:hover {
+  color: #0079c2;
+}
+
+.webinar-page-title .breadcrumb > li + li {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.webinar-page-title .breadcrumb > li + li:before {
+  font-family: Flaticon;
+  content: "\f103";
+  padding: 0;
+  position: absolute;
+  left: -14px;
+  top: 1px;
+  color: #0079c2;
+}
+
+/******************************
+	#webinar-page title End
+******************************/
+
+/******************************
+	#mission-page title
+******************************/
+/* .mission-page-title {
+  background: url("../Cimgs/mission-breadcrumb.jpg") center center/cover no-repeat
+    local;
+  width: 100%;
+  height: 430px;
+  position: relative;
+  text-align: center;
+} */
+
+.mission-hero-page {
+  position: relative;
+  /* width: 100vw; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Cimgs/mission-breadcrumb.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 65vh;
+  background-attachment: fixed;
+}
+
+@media (max-width: 991px) {
+  .mission-page-title {
+    height: 300px;
+  }
+}
+
+.mission-page-title:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.mission-page-title .container {
+  height: 100%;
+  display: table;
+}
+
+@media screen and (min-width: 992px) {
+  .mission-page-title .container {
+    padding-top: 100px;
+  }
+}
+
+.mission-page-title .container > .row {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.mission-page-title h2 {
+  font-size: 50px;
+  font-size: 3.33333rem;
+  color: #fff;
+  margin: 0 0 0.3em;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .mission-page-title h2 {
+    font-size: 45px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .mission-page-title h2 {
+    font-size: 40px;
+    font-size: 2.66667rem;
+  }
+}
+
+.mission-page-title .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .mission-page-title .breadcrumb {
+    text-align: center;
+  }
+}
+
+.mission-page-title .breadcrumb li {
+  font-size: 16px;
+  font-size: 1.06667rem;
+  color: #fff;
+  margin-right: 5px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .mission-page-title .breadcrumb li {
+    font-size: 14px;
+    font-size: 0.93333rem;
+  }
+}
+
+.mission-page-title .breadcrumb li a {
+  color: #0079c2;
+}
+
+.mission-page-title .breadcrumb li a:hover {
+  color: #0079c2;
+}
+
+.mission-page-title .breadcrumb > li + li {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.mission-page-title .breadcrumb > li + li:before {
+  font-family: Flaticon;
+  content: "\f103";
+  padding: 0;
+  position: absolute;
+  left: -14px;
+  top: 1px;
+  color: #0079c2;
+}
+
+/******************************
+	#mission-page title End
+******************************/
+
+/******************************
+	#privacy-page title
+******************************/
+.privacy-page-title {
+  background: url("../Cimgs/privacy-breadcrumb.jpg") center center/cover
+    no-repeat local;
+  width: 100%;
+  height: 430px;
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .privacy-page-title {
+    height: 300px;
+  }
+}
+
+.privacy-page-title:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.privacy-page-title .container {
+  height: 100%;
+  display: table;
+}
+
+@media screen and (min-width: 992px) {
+  .privacy-page-title .container {
+    padding-top: 100px;
+  }
+}
+
+.privacy-page-title .container > .row {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.privacy-page-title h2 {
+  font-size: 50px;
+  font-size: 3.33333rem;
+  color: #fff;
+  margin: 0 0 0.3em;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .privacy-page-title h2 {
+    font-size: 45px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .privacy-page-title h2 {
+    font-size: 40px;
+    font-size: 2.66667rem;
+  }
+}
+
+.privacy-page-title .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .privacy-page-title .breadcrumb {
+    text-align: center;
+  }
+}
+
+.privacy-page-title .breadcrumb li {
+  font-size: 16px;
+  font-size: 1.06667rem;
+  color: #fff;
+  margin-right: 5px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .privacy-page-title .breadcrumb li {
+    font-size: 14px;
+    font-size: 0.93333rem;
+  }
+}
+
+.privacy-page-title .breadcrumb li a {
+  color: #0079c2;
+}
+
+.privacy-page-title .breadcrumb li a:hover {
+  color: #0079c2;
+}
+
+.privacy-page-title .breadcrumb > li + li {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.privacy-page-title .breadcrumb > li + li:before {
+  font-family: Flaticon;
+  content: "\f103";
+  padding: 0;
+  position: absolute;
+  left: -14px;
+  top: 1px;
+  color: #0079c2;
+}
+
+/******************************
+	#privacy-page title End
+******************************/
+
+/******************************
+	#exhibition-page title
+******************************/
+.exhibition-page-title {
+  background: url("../Cimgs/exhibition-breadcrumb.jpg") center center/cover
+    no-repeat local;
+  width: 100%;
+  height: 430px;
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .exhibition-page-title {
+    height: 300px;
+  }
+}
+
+.exhibition-page-title:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.exhibition-page-title .container {
+  height: 100%;
+  display: table;
+}
+
+@media screen and (min-width: 992px) {
+  .exhibition-page-title .container {
+    padding-top: 100px;
+  }
+}
+
+.exhibition-page-title .container > .row {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.exhibition-page-title h2 {
+  font-size: 50px;
+  font-size: 3.33333rem;
+  color: #fff;
+  margin: 0 0 0.3em;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .exhibition-page-title h2 {
+    font-size: 45px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .exhibition-page-title h2 {
+    font-size: 40px;
+    font-size: 2.66667rem;
+  }
+}
+
+.exhibition-page-title .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .exhibition-page-title .breadcrumb {
+    text-align: center;
+  }
+}
+
+.exhibition-page-title .breadcrumb li {
+  font-size: 16px;
+  font-size: 1.06667rem;
+  color: #fff;
+  margin-right: 5px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .exhibition-page-title .breadcrumb li {
+    font-size: 14px;
+    font-size: 0.93333rem;
+  }
+}
+
+.exhibition-page-title .breadcrumb li a {
+  color: #0079c2;
+}
+
+.exhibition-page-title .breadcrumb li a:hover {
+  color: #0079c2;
+}
+
+.exhibition-page-title .breadcrumb > li + li {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.exhibition-page-title .breadcrumb > li + li:before {
+  font-family: Flaticon;
+  content: "\f103";
+  padding: 0;
+  position: absolute;
+  left: -14px;
+  top: 1px;
+  color: #0079c2;
+}
+
+/******************************
+	#exhibition-page title End
+******************************/
+
+/******************************
+	#media-page title
+******************************/
+/* .media-page-title {
+  background: url("../Cimgs/media-breadcrumb.jpg") center center/cover no-repeat
+    local;
+  width: 100%;
+  height: 430px;
+  position: relative;
+  text-align: center;
+} */
+
+.media-hero-section {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../Cimgs/media-breadcrumb.jpg") !important;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 65vh;
+  background-attachment: fixed;
+}
+
+@media (max-width: 991px) {
+  .media-page-title {
+    height: 300px;
+  }
+}
+
+.media-page-title:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.media-page-title .container {
+  height: 100%;
+  display: table;
+}
+
+@media screen and (min-width: 992px) {
+  .media-page-title .container {
+    padding-top: 100px;
+  }
+}
+
+.media-page-title .container > .row {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.media-page-title h2 {
+  font-size: 50px;
+  font-size: 3.33333rem;
+  color: #fff;
+  margin: 0 0 0.3em;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .media-page-title h2 {
+    font-size: 45px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .media-page-title h2 {
+    font-size: 40px;
+    font-size: 2.66667rem;
+  }
+}
+
+.media-page-title .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .media-page-title .breadcrumb {
+    text-align: center;
+  }
+}
+
+.media-page-title .breadcrumb li {
+  font-size: 16px;
+  font-size: 1.06667rem;
+  color: #fff;
+  margin-right: 5px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .media-page-title .breadcrumb li {
+    font-size: 14px;
+    font-size: 0.93333rem;
+  }
+}
+
+.media-page-title .breadcrumb li a {
+  color: #0079c2;
+}
+
+.media-page-title .breadcrumb li a:hover {
+  color: #0079c2;
+}
+
+.media-page-title .breadcrumb > li + li {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.media-page-title .breadcrumb > li + li:before {
+  font-family: Flaticon;
+  content: "\f103";
+  padding: 0;
+  position: absolute;
+  left: -14px;
+  top: 1px;
+  color: #0079c2;
+}
+
+/******************************
+	#media-page title End
+******************************/
+
+/******************************
+	Contact page
+******************************/
+.contact-hero-section {
+  position: relative;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Cimgs/contact-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 65vh;
+  background-attachment: fixed;
+}
+
+/******************************
+	Contact page
+******************************/
+
+/* .../Cimgs/privacy-breadcrumb.jpg  */
+
+/******************************
+General Page
+******************************/
+
+.general-hero-section {
+  position: relative;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../Cimgs/privacy-breadcrumb.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 65vh;
+  background-attachment: fixed;
+}
+
+.general-hero-section h2.gradient-text {
+  color: #eeb41e;
+  font-size: 5.2rem;
+  /* letter-spacing: 6px; */
+  text-transform: uppercase;
+}

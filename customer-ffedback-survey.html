@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .rating-scale {
+            display: flex;
+            justify-content: space-between;
+            max-width: 500px;
+        }
+        .rating-option {
+            text-align: center;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Satisfaction Survey</h1>
+    <p>Thank you for taking the time to provide feedback. Your responses help us improve our services.</p>
+    
+    <form action="/submit-survey" method="POST">
+        <div class="form-group">
+            <label for="name">Your Name (Optional):</label>
+            <input type="text" id="name" name="name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email (Optional):</label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div class="form-group">
+            <label>How satisfied are you with our product/service?</label>
+            <div class="rating-scale">
+                <div class="rating-option">
+                    <input type="radio" id="very-satisfied" name="satisfaction" value="5">
+                    <label for="very-satisfied">5 (Very Satisfied)</label>
+                </div>
+                <div class="rating-option">
+                    <input type="radio" id="satisfied" name="satisfaction" value="4">
+                    <label for="satisfied">4</label>
+                </div>
+                <div class="rating-option">
+                    <input type="radio" id="neutral" name="satisfaction" value="3">
+                    <label for="neutral">3</label>
+                </div>
+                <div class="rating-option">
+                    <input type="radio" id="dissatisfied" name="satisfaction" value="2">
+                    <label for="dissatisfied">2</label>
+                </div>
+                <div class="rating-option">
+                    <input type="radio" id="very-dissatisfied" name="satisfaction" value="1">
+                    <label for="very-dissatisfied">1 (Very Dissatisfied)</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="improvements">What could we do to improve?</label>
+            <textarea id="improvements" name="improvements" rows="4"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>Would you recommend us to others?</label>
+            <select name="recommend">
+                <option value="">Select an option</option>
+                <option value="definitely">Definitely</option>
+                <option value="probably">Probably</option>
+                <option value="not-sure">Not sure</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="comments">Additional comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+</html>

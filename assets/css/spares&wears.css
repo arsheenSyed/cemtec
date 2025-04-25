@@ -1,0 +1,138 @@
+.h2.gradient-text {
+  letter-spacing: 3px;
+}
+
+.industries-hero-page.spares-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Cimgs/spares&wares/img-3.jpg") !important;
+}
+
+/* benefits or services  */
+
+.benefits-section {
+  padding: 50px 20px;
+  padding-bottom: 0 !important;
+  max-width: 100%;
+  margin: 0 auto; /* Center alignment */
+}
+
+.benefits-section h2 {
+  color: rgb(0, 121, 194); /* Blue color for the title */
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.benefits-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: rgb(0, 121, 194);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+  gap: 25px; /* Space between items */
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 15px 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(95, 96, 98); /* Grey for text */
+  background-color: #fff;
+  border-left: 4px solid rgb(0, 121, 194); /* Blue highlight on the left */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+  /* border-radius: 8px; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  height: 5.5rem;
+}
+
+.benefits-list li:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.benefits-list li::before {
+  content: "✔"; /* Checkmark*/
+  color: rgb(0, 121, 194); /* Blue for the checkmark */
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 15px;
+  display: inline-block;
+  /* margin: 0 auto; */
+}
+
+.benefits-section p {
+  font-size: 18px;
+  color: rgba(95, 96, 98, 0.7); /* Muted grey */
+  text-align: center;
+  margin-top: 40px;
+}
+
+.benefits-section p a {
+  color: rgb(0, 121, 194);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.benefits-section p a:hover {
+  color: rgba(0, 121, 194, 0.8); /* Slightly darker on hover */
+}
+
+p.benefits-line {
+  font-weight: 300 !important;
+  color: #687187;
+  font-size: 1.5rem !important;
+  margin-top: 60px !important;
+}
+
+p.benefits-line span {
+  font-weight: bold;
+}
+
+/* features section */
+
+.features-section-s2 p {
+  font-size: 18px;
+  margin-top: 2rem;
+  /* font-weight: bold; */
+}
+
+.banner {
+  padding: 0;
+}
+
+.banner h1 {
+  line-height: 1.5;
+}
+
+.icons-outer-benefits-section .grid {
+  height: auto !important;
+}
+
+.related-content.spears-wears-content {
+  background-color: #e7e9ea !important;
+}
+
+.downloads-section.downloads-spare-wares {
+  background-color: white !important;
+}
+
+.downloads-row {
+  background: white !important;
+}

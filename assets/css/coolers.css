@@ -1,0 +1,116 @@
+.retrofits-hero.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Cimgs/coolers/hero-img.jpg") !important;
+}
+
+/* packages & solutions */
+
+.cards-package-container {
+  /* margin-top: 4rem; */
+}
+
+.packages-sub-title {
+  margin-top: 1rem;
+  font-size: 1.067777rem;
+}
+
+.cards-package-container .card {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+  /* height: 300px; */
+}
+.cards-package-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cards-package-container .card-header {
+  background: linear-gradient(90deg, rgb(0, 121, 194), rgb(95, 96, 98));
+  /* background-color: rgb(0, 121, 194); */
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  /* border-radius: 4px; */
+}
+.cards-package-container .card-body {
+  /* padding: 0 15px; */
+  padding-left: 13px;
+  padding-bottom: 2rem;
+}
+.cards-package-container .card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cards-package-container .card-body ul li {
+  margin: 8px;
+  /* padding: 10px; */
+  font-size: 1.067rem;
+  color: #333;
+  font-weight: 500;
+  /* border-left: 4px solid rgb(0, 121, 194); */
+  /* background: #f9f9f9; */
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+.cards-package-container .card-body ul li:hover {
+  /* background: rgba(0, 121, 194, 0.1); */
+  transform: scale(1.02);
+}
+.cards-package-container .card-body ul li::before {
+  content: "\2022";
+  color: rgb(0, 121, 194);
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+.cards-package-container .read-morep {
+  color: rgb(0, 121, 194);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  background: none;
+}
+.cards-package-container .read-morep:hover {
+  color: rgb(95, 96, 98);
+}
+
+.cards-package-container .hidden {
+  /* display: none !important; */
+}
+
+.cards-package-container .hide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.cards-package-container .show {
+  display: inline;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* benefits */
+
+p.benefits-sub-title {
+  font-size: 1.06777rem !important;
+}
+
+.retrofits-benefits {
+  background-color: #e7e9ea;
+}
+
+.benefits-list li {
+  height: 5.3rem;
+}

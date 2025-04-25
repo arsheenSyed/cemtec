@@ -1,0 +1,32 @@
+.installation-commisioning-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Cimgs/installation-commisioning/Installation-Commissioning.JPG") !important;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  height: 5.5rem;
+  text-align: left;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(95, 96, 98);
+  background-color: #fff;
+  border-left: 4px solid rgb(0, 121, 194);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* border-radius: 8px; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-content {
+  background-color: #e7e9ea !important;
+}
+
+.downloads-section {
+  background-color: white !important;
+}
+
+.downloads-row {
+  background: white !important;
+}

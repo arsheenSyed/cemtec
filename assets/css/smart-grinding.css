@@ -1,0 +1,218 @@
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Cimgs/smart-grinding/smartgrinding.jpg") !important;
+}
+
+.industries-hero-page p {
+  /* font-family: "Barlow Condensed", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.features-section-s2.ctc-key-facts {
+  margin-bottom: 80px;
+}
+
+.ctc-key-facts.section-padding {
+  padding-bottom: 0;
+}
+
+.ctc-key-facts .icons-outer {
+  /* margin-top: 150rem; */
+}
+
+.grid {
+  margin-top: 2.5rem;
+}
+
+.icons-outer .grid p {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* ctc versions */
+
+/* packages & solutions */
+
+.cards-package-container {
+  margin-top: 1.5rem;
+}
+.cards-package-container .card {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+  height: 200px;
+  /* height: 300px; */
+}
+.cards-package-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cards-package-container .card-header {
+  /* background: linear-gradient(90deg, rgb(0, 121, 194), rgb(95, 96, 98)); */
+  background-color: rgb(0, 121, 194);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  /* border-radius: 4px; */
+}
+.cards-package-container .card-body {
+  padding: 0 15px;
+  /* padding-left: 13px; */
+  padding-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.cards-package-container .card-body span {
+  color: rgb(0, 121, 194);
+}
+
+.cards-package-container .card-body ul li:hover {
+  /* background: rgba(0, 121, 194, 0.1); */
+  transform: scale(1.02);
+}
+.cards-package-container .card-body ul li::before {
+  /* content: "\2022";
+    color: rgb(0, 121, 194);
+    font-size: 1.2rem;
+    margin-right: 10px; */
+}
+.cards-package-container .read-morep {
+  color: rgb(0, 121, 194);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  background: none;
+}
+.cards-package-container .read-morep:hover {
+  color: rgb(95, 96, 98);
+}
+
+.cards-package-container .hidden {
+  /* display: none !important; */
+}
+
+.cards-package-container .hide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.cards-package-container .show {
+  display: inline;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.section-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.related-content {
+  background-color: #f2f2f2 !important;
+}
+
+.small-image {
+  max-width: 90%;
+  height: auto;
+}
+.smart-grinding-benefits {
+  background-color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.smart-grinding-benefits .section-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: none; /* Ensure sentence case */
+  white-space: nowrap; /* Prevents breaking into multiple lines */
+}
+
+.smart-grinding-benefits .section-title h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 30px;
+  text-transform: none; /* Ensure sentence case */
+}
+
+.smart-grinding-benefits {
+  background-color: #d3d3d3; /* Slightly darker grey background */
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Section 1 - Smart Grinding Technology */
+/* Background color for the benefits section */
+.benefits-outer {
+  background-color: #ffffff; /* Set the background color to dark grey */
+  padding: 50px 0; /* Optional: Adjust padding as needed */
+}
+
+/* Remove tick marks from unordered list items */
+.benefits-list {
+  list-style: none; /* Removes the default tick mark */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.benefits-list li {
+  display: flex; /* To align icons and text horizontally */
+  align-items: center; /* Aligns the icon and text vertically */
+  margin-bottom: 20px; /* Adds space between list items */
+  font-size: 1.3rem; /* Adjust font size as needed */
+}
+
+.benefits-list li i {
+  margin-right: 15px; /* Adds space between the icon and text */
+  font-size: 1.6rem; /* Adjust icon size if needed */
+}
+
+.benefits-list li:hover {
+  background-color: #f0f0f0; /* Optional: Adds hover effect on list items */
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+/* If you want the icons to have different colors for each point */
+.benefits-list i {
+  color: rgb(255, 225, 0);
+}
+
+.about-custom-section-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #999494; /* Set text color to white for better contrast */
+  margin-bottom: 10px;
+}
+
+.about-custom-section-title h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ccc; /* Lighter grey color for the subtitle */
+  margin-bottom: 30px;
+}
+
+.benefits-list {
+  background-color: #ffffff; /* Darker background for the benefit list */
+  /* Optional: Add rounded corners */
+}

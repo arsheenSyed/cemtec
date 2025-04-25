@@ -1,0 +1,208 @@
+.industries-info {
+  position: relative;
+  z-index: 2;
+}
+
+.industries-hero-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.industries-hero-para {
+  font-size: 24px;
+}
+
+.industries-hero-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+  z-index: 1;
+}
+
+.details {
+  font-family: Arial, sans-serif;
+  color: #8c7c7c;
+  line-height: 1.6;
+}
+
+.test-facilities-section {
+  padding: 40px 0;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.test-facilities-section {
+  padding: 40px 0;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details p {
+  font-size: 16px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.test-facilities-section {
+  padding: 40px 0;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details p {
+  font-size: 16px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.details ul {
+  margin: 0;
+  padding: 0 0 0 20px; /* Indentation for bullets */
+}
+
+.details ul li {
+  font-size: 16px;
+  color: #6c757d;
+  list-style-type: disc; /* Bullet points */
+}
+
+.details ul li a {
+  text-decoration: none; /* Removes underline */
+  color: #6c757d; /* Same as paragraph color */
+}
+
+.details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 15px;
+}
+
+.details h2 span {
+  color: #464d54;
+}
+
+.img-holder img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Ensures responsive layout */
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-lg-6 {
+    width: 100%;
+  }
+}
+
+/*  */
+
+/* Universal Image Styling */
+img {
+  width: 100%; /* Make the image responsive */
+  /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and crop excess */
+  vertical-align: middle; /* Align images */
+  border: 0; /* Remove any borders */
+  box-sizing: border-box; /* Include padding/borders in dimensions */
+  max-width: 100%; /* Prevent images from exceeding their container width */
+}
+
+/* Specific Rule for Images in .card */
+.card img {
+  width: 100%; /* Ensure the image fills the card */
+  height: 200px; /* Keep height consistent */
+  object-fit: cover; /* Ensure proper cropping/scaling */
+}
+
+/* For .about-us-section */
+.about-us-section img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain proportional height */
+  object-fit: cover; /* Ensure the image looks good */
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 767px) {
+  img {
+    height: auto; /* Allow images to adjust for smaller screens */
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniform images */
+  object-fit: cover; /* Ensure images fit within the box */
+}
+
+.card-content {
+  padding: 10px;
+  background: white;
+  color: #333; /* Dark grey text */
+  font-size: 16px;
+}
+
+.section-title h2 {
+  text-align: center;
+  color: #333;
+}
+
+.swiper-pagination {
+  bottom: 10px;
+  text-align: center;
+}
+
+/* Optional hover effect */
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}

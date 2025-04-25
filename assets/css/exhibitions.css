@@ -1,0 +1,119 @@
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../Cimgs/exhibitions/hero-img.jpg") !important;
+}
+
+.about-1 {
+  background-color: #ffffff !important;
+}
+
+.nav-card ul {
+  width: 95%;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.filter {
+  flex: 1;
+  margin: 0 10px; /* Uniform margin for all filters */
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  background: white;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: white;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.dropdown div {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.table {
+  width: 100%; /* Ensure the table spans the full width */
+  border-collapse: collapse;
+  margin: 0; /* Remove unnecessary left margin */
+}
+
+.table th,
+.table td {
+  padding: 19px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  margin-left: -4px;
+}
+
+.table th {
+  background: rgb(255, 255, 255);
+  color: rgb(8, 6, 6);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.month {
+  background-color: rgb(1, 121, 194) !important;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px; /* Adjust padding for better spacing */
+  margin: 0; /* Remove negative margin to align with other elements */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.exhibition-page-title {
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  text-align: center; /* Aligns text in the center */
+  background-color: #f8f9fa; /* Optional: Background color for better visibility */
+  padding: 20px 0; /* Adds some vertical spacing */
+}
+
+.exhibition-page-title .container {
+  max-width: 100%; /* Ensures full-width alignment if needed */
+}
+
+.exhibition-page-title h2 {
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold;
+  margin-bottom: 10px; /* Adds spacing below the title */
+}
+
+.exhibition-page-title ol.breadcrumb {
+  display: inline-block; /* Keeps breadcrumbs compact */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  list-style: none; /* Removes default list style */
+}

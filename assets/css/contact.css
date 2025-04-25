@@ -1,0 +1,56 @@
+.contact-pg-section.contact-page form > div.form-mid-check-boxes {
+  width: 45% !important;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  border: 1px solid #687187;
+  padding: 12px;
+  border-radius: 3px;
+  margin-bottom: 3rem;
+}
+
+.contact-pg-section.contact-page form > div.form-mid-check-boxes p {
+  font-size: 1rem;
+  color: #687187;
+  margin: 0;
+}
+
+.contact-pg-section form div.form-mid-check-boxes input {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.form-mid-head-title {
+  margin-top: 15rem;
+  margin-bottom: 2rem;
+}
+
+.form-mid-title {
+  font-size: 1.2rem;
+}
+
+.contact-pg-section form > div.submit-area {
+  width: 100%;
+}
+
+.contact-pg-section form > div.privacy-policy {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact-pg-section form > div.privacy-policy p {
+  margin: 0;
+}
+
+.submit-area {
+  display: block;
+  width: 100%;
+}
+
+#privacy-policy {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}

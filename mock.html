@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FEMAT Hungary Section</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 40px;
+        background-color: #ffffff;
+        color: #333;
+      }
+
+      .section-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        gap: 40px;
+      }
+
+      .section-image {
+        flex: 1 1 400px;
+      }
+
+      .section-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-content {
+        flex: 1 1 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .info-header-m {
+        font-size: 24px;
+        color: #2c6cbf;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .info-header-m i {
+        color: #ffc107;
+      }
+
+      .info-item-m {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .info-item-m i {
+        color: #ffc107;
+        min-width: 20px;
+        margin-top: 2px;
+      }
+
+      .info-item-m a {
+        color: #2c6cbf;
+        text-decoration: none;
+      }
+
+      .info-item-m a:hover {
+        text-decoration: underline;
+      }
+
+      .highlight-m {
+        color: #2c6cbf;
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        .info-item-m {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-container">
+      <!-- Replace the src below with your actual image -->
+      <div class="section-image">
+        <img
+          src="./assets/Cimgs/manufacturing/img-1.jpg"
+          alt="FEMAT Hungary Office"
+        />
+      </div>
+
+      <div class="section-content">
+        <div class="info-header-m"><i class="fas fa-flag"></i> Hungary</div>
+
+        <div class="info-item-m">
+          <i class="fas fa-building"></i>
+          <div>
+            <span class="highlight-m">FEMAT Hungária</span><br />
+            Machine and Steel Structure Manufacturing Ltd.
+          </div>
+        </div>
+
+        <div class="info-item-m">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            Ady Endre Street 49<br />
+            8973 Csesztreg
+          </div>
+        </div>
+
+        <div class="info-item-m">
+          <i class="fas fa-phone"></i>
+          <div><span class="highlight">Phone:</span> +36 92 573 410</div>
+        </div>
+
+        <div class="info-item-m">
+          <i class="fas fa-fax"></i>
+          <div><span class="highlight">Fax:</span> +36 92 573 419</div>
+        </div>
+
+        <div class="info-item-m">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <span class="highlight-m">Email:</span>
+            <a href="mailto:office@femat.hu">office@femat.hu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

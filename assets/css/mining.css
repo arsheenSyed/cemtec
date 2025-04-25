@@ -1,0 +1,59 @@
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Cimgs/Mining/hero-image-main.jpeg") !important;
+}
+
+.about-us-section.about-1 .details ul li {
+  position: relative;
+  margin-left: 1rem;
+  list-style-type: disc;
+  padding-left: 0px;
+}
+
+.about-1 li {
+  margin-left: 1rem;
+}
+
+.about-1 .details p {
+  /* line-height: 0; */
+}
+
+.nav-card ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%);
+  list-style: none;
+  text-align: center;
+  background: rgb(0, 121, 194);
+  /* border-radius: 10px; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  width: 90%;
+  z-index: 2;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  height: 260px;
+  overflow-y: auto;
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+.nav-card ul::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.nav-card ul::-webkit-scrollbar-thumb {
+  /* background-color: rgb(95, 96, 98);  */
+  background-color: white;
+  border-radius: 6px; /* Optional: Rounded edges */
+}
+
+.nav-card ul::-webkit-scrollbar-track {
+  background: transparent; /* Optional: Background of the scrollbar track */
+}
+
+/* For Firefox */
+/* html {
+  scrollbar-width: thin; 
+  scrollbar-color: rgb(95, 96, 98) #f1f1f1; 
+} */

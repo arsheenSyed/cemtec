@@ -1,0 +1,23 @@
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Cimgs/industrial-minerals/industrial\ minerals.jpg") !important;
+}
+
+h2.gradient-text {
+  font-size: 5rem;
+  letter-spacing: 3.5px !important;
+}
+
+.about-1 {
+  background-color: #e7e9ea !important;
+}
+
+.about-1.about-us-section .details ul {
+  list-style-type: disc;
+}
+
+.about-1.about-us-section .details ul li {
+  position: relative;
+  padding-left: 0;
+  margin-left: 1rem;
+}

@@ -1,0 +1,11 @@
+.service-sidebar .download-widget ul.cust-panel-body {
+  border: 4px solid #f1f5f7;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.service-sidebar .download-widget ul.cust-panel-body a,
+.cust-panel-body ul a {
+  background-color: #fff !important;
+  color: black;
+}

@@ -1,0 +1,12 @@
+.industries-hero-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Cimgs/fertilizers-page/fertilizers.jpg") !important;
+}
+
+.about-1 {
+  background-color: #e7e9ea !important;
+}
+
+.nav-card ul {
+  width: 95%;
+}
