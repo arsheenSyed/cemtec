@@ -152,7 +152,30 @@ router.post("/send-email", (req, res) => {
       res.send("Error occurred while sending email.");
     } else {
       console.log("Email sent:", info.response);
-      res.send("Email sent successfully!");
+      res.send(`
+        <html>
+          <head>
+            <style>
+              body {
+                background-color: #337ab7;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                text-align: center;
+              }
+            </style>
+          </head>
+          <body>
+            <div>
+              <h1>Thank You for Your Submission!</h1>
+              <p>We’ll be in touch with you shortly.</p>
+            </div>
+          </body>
+        </html>
+      `);
     }
   });
 });
