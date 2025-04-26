@@ -24,15 +24,31 @@ router.post("/send-email", (req, res) => {
   } = req.body;
 
   console.log;
-  "Form data:", req.body; // Log the form data for debugging
+  "Form data:", req.body;
+
+  // Log the form data for debugging
+  // const transporter = nodemailer.createTransport({
+  //   service: "gmail",
+  //   auth: {
+  //     user: process.env.EMAIL_USER,
+  //     pass: process.env.EMAIL_PASS,
+  //   },
+  // });
+
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.world4you.com", // SMTP server
+    port: 587, // Port for STARTTLS
+    secure: false, // Use false for STARTTLS
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      user: "website@cemtecgroup.at", // SMTP username
+      pass: "cansIs-musdig-3xejze", // SMTP password
+    },
+    tls: {
+      rejectUnauthorized: false, // Optional, allows self-signed certs
     },
   });
 
+  /*
   const mailOptions = {
     from: "CEMTEC Cement & Mining Technology",
     to: ["uzaidmohd@gmail.com", "uzaid@obtechnos.com"],
@@ -47,6 +63,29 @@ router.post("/send-email", (req, res) => {
       Equipment: ${Equipment}
       Aftermarket: ${aftermarket}
     `,
+  };
+*/
+
+  /*
+  const mailOptions = {
+    from: '"Website Contact" <website@cemtecgroup.at>', // sender address
+    to: [
+      "e.freinhofer@cemtec.at",
+      "arsheenstrong@gmail.com",
+      "uzaid@obtechnos.com",
+    ], // recipient
+    subject: "New Website Submission", // subject line
+    text: "You received a new message from the website! please ignore this message as this is only for testing", // plain text body
+    // html: "<p>You received a new message from the website!</p>" // Optional HTML
+  };
+
+  */
+
+  const mailOptions = {
+    from: '"Website Contact" <website@cemtecgroup.at>',
+    to: "e.freinhofer@cemtec.at", // hardcoded!
+    subject: "Test Email",
+    text: "Testing correct recipient",
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
