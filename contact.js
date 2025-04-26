@@ -66,7 +66,6 @@ router.post("/send-email", (req, res) => {
   };
 */
 
-  /*
   const mailOptions = {
     from: '"Website Contact" <website@cemtecgroup.at>', // sender address
     to: [
@@ -79,14 +78,12 @@ router.post("/send-email", (req, res) => {
     // html: "<p>You received a new message from the website!</p>" // Optional HTML
   };
 
-  */
-
-  const mailOptions = {
-    from: '"Website Contact" <website@cemtecgroup.at>',
-    to: "e.freinhofer@cemtec.at", // hardcoded!
-    subject: "Test Email",
-    text: "Testing correct recipient",
-  };
+  // const mailOptions = {
+  //   from: '"Website Contact" <website@cemtecgroup.at>',
+  //   to: "e.freinhofer@cemtec.at", // hardcoded!
+  //   subject: "Test Email",
+  //   text: "Testing correct recipient",
+  // };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
