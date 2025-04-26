@@ -41,8 +41,8 @@ router.post("/send-email", (req, res) => {
     port: 587, // Port for STARTTLS
     secure: false, // Use false for STARTTLS
     auth: {
-      user: "website@cemtecgroup.at", // SMTP username
-      pass: "cansIs-musdig-3xejze", // SMTP password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
     tls: {
       rejectUnauthorized: false, // Optional, allows self-signed certs
